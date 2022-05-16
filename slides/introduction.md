@@ -47,10 +47,162 @@ Tell me what is the answer?
 # Lets write some code
 
 ```javascript
-const p = 8;
-const b = 6;
+var p = 8;
+var b = 6;
 
-const h = Math.sqrt(p*p + b*b);
+var h = Math.sqrt(p*p + b*b);
 
 console.log(h);
+```
+
+---
+# Declaring variables
+Variables are a way to give name to a value, so we can reuse that value by calling its name, just like we give names to buildings to refer them in conversation.
+```javascript
+var p = 8;
+var b = 6;
+var name = "John";
+```
+Remember we use = operator to assign value to a variable
+
+Write a program to declare a variable name = 'your_name' and use console.log function to print 'Hello your_name'
+
+---
+# Different types of value
+ In JavaScript, a variable can hold different types of values
+
+ ## Primitive types
+ + String
+ + Number
+ + Boolean
+ + undefined
+ + null
+ + Symbol
+ + BigInt
+
+---
+
+# Write a program
+
+Write a program to declare two variables name and age
+and print the statement 'Rahul is 22 years old'
+
+---
+
+# Case Sensitivity in Variables
+In JavaScript all variables and function names are case sensitive. This means that capitalization matters.
+
+MYVAR is not the same as MyVar nor myvar. It is possible to have multiple distinct variables with the same name but different casing. It is strongly recommended that for the sake of clarity, you do not use this language feature.
+
+---
+
+Write variable names in JavaScript in camelCase. In camelCase, multi-word variable names have the first word in lowercase and the first letter of each subsequent word is capitalized.
+
+Examples:
+```javascript
+var someVariable;
+var anotherVariableName;
+var thisVariableNameIsSoLong;
+```
+
+---
+# Write a program
+Create a program to calculate area of circle
+
+Area of Circle is 
+$$  Area of Cicle = pi * r^{2}$$
+
+use pi = 3.14
+
+[Lets try this code](https://jsbin.com/xavoset/edit?html,js,output)
+
+---
+
+# Write a program
+
+Create a program to find Area of triangle
+
+$$ Area of triangle = 1/2 * base * height $$
+
+---
+
+# Arithmatic operators
+
+| Operator | Description |
+| ------- | ---------- |
+| +	| Addition |
+| -	| Subtraction |
+| * | Multiplication |
+| ** | Exponentiation |
+| /	| Division |
+| %	| Modulus (Remainder) |
+| ++ | Increment |
+| -- | Decrement |
+
+---
+# Concatenating Strings with Plus Operator
+In JavaScript, when the + operator is used with a String value, it is called the concatenation operator. You can build a new string out of other strings by concatenating them together.
+
+Example
+```javascript
+'My name is Alan,' + ' I concatenate.'
+```
+Note: Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.
+
+Example:
+```javascript
+const ourStr = "I come first. " + "I come second.";
+```
+The string I come first. I come second. would be displayed in the console.
+
+---
+
+# Write a program
+
+Write a program to print your full name(firstname + middlename + lastname) in the console.
+
+---
+# Find the Length of a String
+
+You can find the length of a String value by writing .length after the string variable or string literal.
+
+```javascript
+console.log("Alan Peter".length);
+```
+
+The value 10 would be displayed in the console. Note that the space character between "Alan" and "Peter" is also counted.
+
+For example, if we created a variable const firstName = "Ada", we could find out how long the string Ada is by using the firstName.length property.
+
+---
+
+# Use Bracket Notation with String
+
+Bracket notation is a way to get a character at a specific index within a string.
+
+Most modern programming languages, like JavaScript, don't start counting at 1 like humans do. They start at 0. This is referred to as Zero-based indexing.
+
+For example, the character at index 0 in the word Charles is C. So if const firstName = "Charles", you can get the value of the first letter of the string by using firstName[0].
+
+Example:
+```javascript
+const firstName = "Charles";
+const firstLetter = firstName[0];
+```
+firstLetter would have a value of the string C.
+
+---
+
+# Understand String Immutability
+In JavaScript, String values are immutable, which means that they cannot be altered once created.
+
+For example, the following code:
+```javascript
+let myStr = "Bob";
+myStr[0] = "J";
+```
+cannot change the value of myStr to Job, because the contents of myStr cannot be altered. Note that this does not mean that myStr cannot be changed, just that the individual characters of a string literal cannot be changed. The only way to change myStr would be to assign it with a new string, like this:
+```javascript
+let myStr = "Bob";
+myStr = "Job";
 ```
